@@ -1,7 +1,8 @@
 /**
  * async / await
- *
+ * async 的唯一作用就是将返回值包装成 Promise
  * async 函数一定返回 Promise
+ *
  */
 
 async function getNumber() {

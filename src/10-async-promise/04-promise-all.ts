@@ -4,6 +4,8 @@
  * TS 可以推断出「元组类型」
  */
 
+// 不需要加async,因为Promise.all会自动包装成Promise
+// async的唯一作用就是将返回值包装成Promise，当然，这里加了也不会报错
 function delay(ms: number) {
   return new Promise<string>((resolve) => {
     setTimeout(() => resolve(`delay ${ms}`), ms)
